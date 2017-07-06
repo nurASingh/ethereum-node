@@ -1,0 +1,138 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <title>Amount transfer POC</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,700' rel='stylesheet' type='text/css'>
+  <link href="./app.css" rel='stylesheet' type='text/css' />
+  <link href="./bootstrap/css/bootstrap.min.css" rel='stylesheet' type='text/css'>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+  <script src="./app.js"></script>
+</head>
+
+<body>
+  <div class="container">
+    <div class="jumbotron" style="background-color: #4CAF50;">
+      <h2 style="margin: 1px;">Markit Coin</h2>
+    </div>
+  </div>
+  <div class="container">
+    <div class="row">
+      <nav class="navbar navbar-inverse">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>                        
+      </button>
+      <a class="navbar-brand" href="#">Your Favorite Contacts</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="#">Sanket</a></li>
+        <li><a href="#">Rahul</a></li>
+        <li><a href="#">Nikhil</a></li>
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="#"><span class="glyphicon glyphicon-user"></span> Welcome</a></li>
+        <li><a href="#"><span class="glyphicon glyphicon-log-out"></span> Logout</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
+      <!--<div class="col-md-3 col-sm-12 markit-coin-side-bar">
+        <strong>Your Favorite Contacts </strong>
+        <button class="visible-xs" data-toggle="collapse" data-target="#SearchParameters">Toggle it</button>
+        <div class="hidden-xs col-md-3 col-sm-4 SearchParameters" id="SearchParameters">
+        <ul class="markit-coin-side-list">
+          <li><a>Sanket</a></li>
+          <li><a>Rahul</a></li>
+          <li><a>Nikhil</a></li>
+        </ul>
+        </div>
+      </div>-->
+      <div class="col-md-12 col-sm-12 markit-coin-main-container" style="margin: 3px;">
+        <div class="row">
+
+          <div class="media">
+
+            <div class="media-left">
+              <img src="images/Arun.jpg" class="media-object" style="width:100px;margin:0px">
+            </div>
+            <div class="media-body">
+
+              <div class="row">
+                <div class="col-md-8 col-sm-6">
+                  <h3 style="margin:20px;color: black;"> You Account</h3>
+                  <h4 class="media-heading" style="margin:20px"><strong>Arun Kumar Singh</strong></h4>
+                  <h5 style="margin:20px">AVP - Markit India</h5>
+                  <div style="margin-left:20px">
+                    <lable>Balance</lable> <span id="yourbalance">100</span>
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <img src="images/QRpedia.png" class="media-object" style="width:200px;margin:0px">
+                </div>
+              </div>
+            </div>
+          </div>
+          <hr>
+        </div>
+        <div class="row">
+          <div class="media">
+<div class="media-left">
+              <img src="images/sanket.jpg" class="media-object" style="width:100px;margin:0px">
+            </div>
+            <div class="media-body">
+
+              <div class="row">
+                <div class="col-md-8 col-sm-6">
+                  <h3 style="margin:20px;color: black;"> Payee Account</h3>
+                  <h4 class="media-heading" style="margin:20px"><strong>Sanket Mittal</strong></h4>
+                  <h5 style="margin:20px">Director - Markit India</h5>
+                  <div style="margin-left:20px">
+                  </div>
+                </div>
+                <div class="col-md-4 col-sm-6">
+                  <img src="images/QRpedia.png" class="media-object" style="width:200px;margin:0px">
+                </div>
+              </div>
+            </div>
+
+          
+            
+          </div>
+        </div>
+        <div class="row">
+          <hr>
+          <div class="col-md-6 col-sm-6">
+              <input type="number" id="amount" style="width:200px;margin-left:50px" />
+              
+          </div>
+          <div class="col-md-6 col-sm-6">
+           
+            <button class="btn btn-primary markit-coin-pay-button" onclick="App.pay()">Pay</button>
+          </div>
+          
+        </div>
+
+        
+      </div>
+    </div>
+
+  </div>
+  <div class="container">
+    <div class="row">
+      <div id="status"></div>
+    </div>
+    <div class="row">
+      <div id="log"></div>
+    </div>
+  </div>
+</body>
+
+</html>

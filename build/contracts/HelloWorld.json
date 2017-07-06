@@ -1,0 +1,106 @@
+{
+  "contract_name": "HelloWorld",
+  "abi": [
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "getBalance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [],
+      "name": "transfer",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "testvar",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": true,
+      "inputs": [],
+      "name": "balance",
+      "outputs": [
+        {
+          "name": "",
+          "type": "uint256"
+        }
+      ],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "constant": false,
+      "inputs": [
+        {
+          "name": "amt",
+          "type": "uint256"
+        }
+      ],
+      "name": "deposit",
+      "outputs": [],
+      "payable": false,
+      "type": "function"
+    },
+    {
+      "inputs": [],
+      "payable": false,
+      "type": "constructor"
+    },
+    {
+      "anonymous": false,
+      "inputs": [
+        {
+          "indexed": false,
+          "name": "amt",
+          "type": "uint256"
+        }
+      ],
+      "name": "Sent",
+      "type": "event"
+    }
+  ],
+  "unlinked_binary": "0x606060405234610000575b60646000555b5b610189806100206000396000f300606060405263ffffffff60e060020a60003504166312065fe081146100505780638a4068dd1461006f578063978aceda1461007e578063b69ef8a81461009d578063b6b55f25146100bc575b610000565b346100005761005d6100ce565b60408051918252519081900360200190f35b346100005761007c61010f565b005b346100005761005d610112565b60408051918252519081900360200190f35b346100005761005d610118565b60408051918252519081900360200190f35b346100005761007c60043561011e565b005b604080516107d0815290516000917fff9eb9d26c4f039c77fb69f72cdcd62f2942afe4d95c7b00919c9b6a6bf003f1919081900360200190a1506001545b90565b5b565b60015481565b60005481565b60018054820190556040805182815290517fff9eb9d26c4f039c77fb69f72cdcd62f2942afe4d95c7b00919c9b6a6bf003f19181900360200190a15b505600a165627a7a7230582002ecd7ae2018a8cf3f28137db27ed2ddaf97132b1e369708b36a58c6941acf400029",
+  "networks": {
+    "1010101010": {
+      "events": {
+        "0xff9eb9d26c4f039c77fb69f72cdcd62f2942afe4d95c7b00919c9b6a6bf003f1": {
+          "anonymous": false,
+          "inputs": [
+            {
+              "indexed": false,
+              "name": "amt",
+              "type": "uint256"
+            }
+          ],
+          "name": "Sent",
+          "type": "event"
+        }
+      },
+      "links": {},
+      "address": "0xae0b3a85a052d142e6f3053ef2fb51a05f84dc83",
+      "updated_at": 1497277641634
+    }
+  },
+  "schema_version": "0.0.5",
+  "updated_at": 1497277641634
+}
